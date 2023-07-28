@@ -14,3 +14,17 @@ You can install the necessary packages using pip:
 
 ```shell
 pip install watchdog
+
+Usage
+To use this folder organizer, run the main.py script and pass the path of the directory you want to monitor as an argument. For example:
+
+shell
+Copy code
+python main.py /path/to/your/directory
+If no directory is specified, the script will monitor the current directory.
+
+How it Works
+The script uses the watchdog library to monitor the specified directory for any changes. Whenever a new file is added to the directory, the script will move it into a subdirectory named after the file's extension.
+
+Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
