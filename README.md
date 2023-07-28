@@ -1,5 +1,5 @@
 # Automated Folder Organizer
-
+WARNING: DO NOT RUN THIS PROGRAM WHILE DOWNLOADING A FILE, ERRORS WILL OCCUR.
 This project is an automated folder organizer, which monitors a specified directory and automatically sorts the files into corresponding folders based on their extensions.
 
 ## Getting Started
@@ -13,6 +13,7 @@ You need Python 3.x and the following Python packages:
 You can install the necessary packages using pip:
 
 ```shell
+
 pip install watchdog
 
 Usage
