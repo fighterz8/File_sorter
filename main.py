@@ -10,6 +10,10 @@ class FileCreatedHandler(FileSystemEventHandler):
         if not event.is_directory:
             sort_file(event.src_path)
 
+    def on_modified(self, event):
+        if not event.is_directory:
+            sort_file(event.src_path)
+
 if __name__ == "__main__":
     path = sys.argv[1] if len(sys.argv) > 1 else "."
 
@@ -29,4 +33,5 @@ if __name__ == "__main__":
     except KeyboardInterrupt:
         observer.stop()
     observer.join()
+
 
